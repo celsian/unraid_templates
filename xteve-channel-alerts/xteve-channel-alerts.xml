@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>xTeVe-Channel-Alerts</Name>
+  <Repository>celsian/xteve-channel-alerts:latest</Repository>
+  <Registry>https://hub.docker.com/r/celsian/xteve-channel-alerts</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/190817-support-xteve-channel-alerts/</Support>
+  <Project>https://github.com/celsian/xteve-channel-alerts</Project>
+  <Overview>Occasionally you may find that a channel you want to watch has disappeared from your xTeVe playlist. With xTeVe-Channel-Alerts, you can stay informed about these changes. When configured to run after your automatic xTeVe update, it compares the current channel list with the previous. If xTeVe-Channel-Alerts detects a missing channel, it sends a detailed rich-embed message to your Discord webhook, keeping you in the loop.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/sxHKgvi.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1748906620</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="xTeVe URL" Target="XTEVE_URL" Default="" Mode="" Description="http://localhost:34400/m3u/xteve.m3u" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Discord Webhook URL" Target="DISCORD_WEBHOOK_URL" Default="" Mode="" Description="https://discord.com/api/webhooks/webhook_id/token" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Config" Target="/app/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/xteve-channel-alerts/</Config>
+  <Config Name="Cron Schedule" Target="CRON_SCHEDULE" Default="0 4 * * *" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <TailscaleStateDir/>
+</Container>
